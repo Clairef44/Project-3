@@ -17,6 +17,11 @@
     int playerArmor=0;
     int playerIngredients=0;
     int keys=0;
+    int playerSilverRing=0;
+    int playerRubyNecklace=0;
+    int playerEmeraldBracelet=0;
+    int playerDiamondCirclet=0;
+    int playerGemEncrustedGoblet=0;
   }
   void getName(){
     return playerName;
@@ -129,18 +134,18 @@
     playerkeys=keyin;
   }
   void setSilverRing(int silver_ringin){
-    silver_ring=silver_ringin;
+    playerSilverRing=silver_ringin;
   }
   void setRubyNecklace(int ruby_necklacein){
-    ruby_necklace=ruby_necklacein;
+    playerRubyNecklace=ruby_necklacein;
   }
   void setEmeraldBracelet(int emerald_braceletin){
-    emerald_bracelet=emerald_braceletin;
+    playerEmeraldBracelet=emerald_braceletin;
   }
   void setDiamondCirclet(int diamond_circletin){
-    diamond_circlet=diamond_circletin;
+    playerDiamondCirclet=diamond_circletin;
   }
   void setGemEncrustedGoblet(int gem_encrusted_gobletin){
-    gem_encrusted_goblet=gem_encrusted_gobletin;
+    playerGemEncrustedGoblet=gem_encrusted_gobletin;
   }
 
