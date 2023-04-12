@@ -46,46 +46,81 @@
   void getKeys(){
     return playerKeys;
   }
-  string getName(string namein){
+  string getName(){
+    return playerName;
+  }
+  int setSilverRing(){
+    return silver_ring;
+  }
+  int setRubyNecklace(){
+    return ruby_necklace;
+  }
+  int setEmeraldBracelet(){
+    return emerald_bracelet;
+  }
+  int setDiamondCirclet(){
+    return diamond_circlet;
+  }
+  int setGemEncrustedGoblet(){
+    return gem_encrusted_gobletin;
+  }
+
+
+  void setName(string namein){
     playerName=namein;
   }
-  int setFullness(int fullin){
+  void setFullness(int fullin){
     playerFullness=fullin;
   }
-  int setGold(int goldin){
+  void setGold(int goldin){
     playerGold=goldin;
   }
-  int setCeramicPot(int potin){
+  void setCeramicPot(int potin){
     playerCeramicPot=potin;
   }
-  int setFryingPan(int panin){
+  void setFryingPan(int panin){
     playerFryingPan=panin;
   }
-  int setCauldron(int cauldronin){
+  void setCauldron(int cauldronin){
     playerCauldron=cauldronin;
   }
-  int setClub(int clubin){
+  void setClub(int clubin){
     playerClub=clubin;
   }
-  int setSpear(int spearin){
+  void setSpear(int spearin){
     playerSpear=spearin;
   }
-  int setRapier(int rapierin){
+  void setRapier(int rapierin){
     playerRapier=cauldronin;
   }
-  int setBattleAxe(int axein){
+  void setBattleAxe(int axein){
     playerBattleAxe=axein;
   }
-  int setLongSword(int swordin){
+  void setLongSword(int swordin){
     playerLongSword=swordin;
   }
-  int setArmor(int armorin){
+  void setArmor(int armorin){
     playerArmor=armorin;
   }
-  int setIngredients(int ingredientsin){
+  void setIngredients(int ingredientsin){
     playerIngredients=ingredientsin;
   }
-  int setkeys(int keyin){
+  void setkeys(int keyin){
     playerkeys=keyin;
+  }
+  void setSilverRing(int silver_ringin){
+    silver_ring=silver_ringin;
+  }
+  void setRubyNecklace(int ruby_necklacein){
+    ruby_necklace=ruby_necklacein;
+  }
+  void setEmeraldBracelet(int emerald_braceletin){
+    emerald_bracelet=emerald_braceletin;
+  }
+  void setDiamondCirclet(int diamond_circletin){
+    diamond_circlet=diamond_circletin;
+  }
+  void setGemEncrustedGoblet(int gem_encrusted_gobletin){
+    gem_encrusted_goblet=gem_encrusted_gobletin;
   }
 
