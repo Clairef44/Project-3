@@ -1,3 +1,23 @@
+  
+  include "player.h"
+  Player(){
+    int string playerName=0;
+    int playerFullness=50;
+    int playerGold=100;
+    int playerCeramicPot=0;
+    int playerFryingPan=0;
+    int playerCauldron=0;
+    int playerClub=0;
+    int playerSpear=0;
+    int playerRapier=0;
+    int playerBattleAxe=0;
+    int playerLongSword=0;
+    int playerWeapons=0;
+    int playerTreasures=0;
+    int playerArmor=0;
+    int playerIngredients=0;
+    int keys=0;
+  }
   void getName(){
     return playerName;
   }
