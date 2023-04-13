@@ -25,7 +25,7 @@ class Merchant{
         int battle_axe_;
         int longsword_;
 
-        int amrmor_;
+        int armor_;
     
         //Treasures 
         int silver_ring_;
@@ -34,10 +34,13 @@ class Merchant{
         int diamond_circlet_;
         int gem_encrusted_goblet_;
 
+
+
+
     public:
         //
         Merchant();
-        Merchant(int fullness, int num_rooms_cleared, int gold, int ingredients, int ceramic_pot, int frying_pan, int cauldron, int club, int spear, int rapier, int battle_axe, int longsword, int amrmor, int silver_ring, int ruby_necklace, int emerald_bracelet,  int diamond_circlet, int gem_encrusted_goblet);
+        Merchant(int fullness, int num_rooms_cleared, int gold, int ingredients, int ceramic_pot, int frying_pan, int cauldron, int club, int spear, int rapier, int battle_axe, int longsword, int armor, int silver_ring, int ruby_necklace, int emerald_bracelet,  int diamond_circlet, int gem_encrusted_goblet);
         //  get functions
         int getFullness();
         int getNumRoomsCleared();
@@ -59,23 +62,24 @@ class Merchant{
         int getGemEncrustedGoblet();
 
         //  set functions
-        void setFullness(int fullness);
-        void setNumRoomsCleared(int num_rooms_cleared);
-        void setGold(int gold);
-        void setIngredients(int ingredients);
-        void setCeramicPot(int ceramic_pot);
-        void setFryingPan(int frying_pan);
-        void setCauldron(int cauldron);
-        void setClub(int club);
-        void setSpear(int spear);
-        void setRapier(int rapier);
-        void setBattleAxe(int battle_axe);
-        void setLongsword(int longsword);
-        void setArmor(int amrmor);
-        void setSilverRing(int silver_ring);
-        void setRubyNecklace(int ruby_necklace);
-        void setEmeraldBracelet(int emerald_bracelet);
-        void setDiamondCirclet(int diamond_circlet);
-        void setGemEncrustedGoblet(int gem_encrusted_goblet);
+        void setFullness(int fullness_amount);
+        void setNumRoomsCleared(int num_rooms);
+        void setGold(int gold_amount);
+        void setIngredients(int num_ingredients);
+        void setCeramicPot(int pot);
+        void setFryingPan(int pan);
+        void setCauldron(int num_cauldron);
+        void setClub(int clubs);
+        void setSpear(int spears);
+        void setRapier(int rapiers);
+        void setBattleAxe(int axe);
+        void setLongsword(int sword);
+        void setArmor(int num_armor);
+        void setSilverRing(int ring);
+        void setRubyNecklace(int necklace);
+        void setEmeraldBracelet(int bracelet);
+        void setDiamondCirclet(int circlet);
+        void setGemEncrustedGoblet(int gem_goblet);
+
 
 };
