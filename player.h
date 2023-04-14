@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class Player{
 
   private:
@@ -26,6 +29,7 @@ class Player{
   
   public:
   Player();
+  Player(string playerName_, int playerFullness_, int playerGold_, int playerCeramicPot_, int playerFryingPan_, int playerCauldron_, int playerClub_, int playerSpear_, int playerRapier_, int playerBattleAxe_, int playerLongSword_, int playerWeapons_, int playerTreasures_, int playerArmor_, int playerIngredients_, int keys_, int playerSilverRing_, int playerRubyNecklace_, int playerEmeraldBracelet_, int playerDiamondCirclet_, int playerGemEncrustedGoblet_);
   string getName();
   int getFullness();
   int getGold();
@@ -42,28 +46,28 @@ class Player{
   int getArmor();
   int getIngredients();
   int getkeys();
-  int setSilverRing();
-  int setRubyNecklace();
-  int setEmeraldBracelet();
-  int setDiamondCirclet();
-  int setGemEncrustedGoblet();
+  int getSilverRing();
+  int getRubyNecklace();
+  int getEmeraldBracelet();
+  int getDiamondCirclet();
+  int getGemEncrustedGoblet();
   
-  string getName(string);
-  void setFullness(int);
-  void setGold(int);
-  void setCeramicPot(int);
-  void setFryingPan(int);
-  void setCauldron(int);
-  void setClub(int);
-  void setSpear(int);
-  void setRapier(int);
-  void setBattleAxe(int);
-  void setLongSword(int);
-  void gsetWeapons(int);
-  void setTreasures(int);
-  void setArmor(int);
-  void setIngredients(int);
-  void setkeys(int);
+  string setName(string namein);
+  void setFullness(int fullin);
+  void setGold(int goldin);
+  void setCeramicPot(int potin);
+  void setFryingPan(int panin);
+  void setCauldron(int cauldronin);
+  void setClub(int clubin);
+  void setSpear(int spearin);
+  void setRapier(int rapierin);
+  void setBattleAxe(int axein);
+  void setLongSword(int swordin);
+  void setWeapons(int weapons);
+  void setTreasures(int treasures);
+  void setArmor(int armorin);
+  void setIngredients(int ingredientsin);
+  void setkeys(int keyin);
   void setSilverRing(int silver_ring);
   void setRubyNecklace(int ruby_necklace);
   void setEmeraldBracelet(int emerald_bracelet);
