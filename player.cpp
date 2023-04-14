@@ -1,151 +1,228 @@
   
-  include "player.h"
-  Player(){
-    int string playerName=0;
-    int playerFullness=50;
-    int playerGold=100;
-    int playerCeramicPot=0;
-    int playerFryingPan=0;
-    int playerCauldron=0;
-    int playerClub=0;
-    int playerSpear=0;
-    int playerRapier=0;
-    int playerBattleAxe=0;
-    int playerLongSword=0;
-    int playerWeapons=0;
-    int playerTreasures=0;
-    int playerArmor=0;
-    int playerIngredients=0;
-    int keys=0;
-    int playerSilverRing=0;
-    int playerRubyNecklace=0;
-    int playerEmeraldBracelet=0;
-    int playerDiamondCirclet=0;
-    int playerGemEncrustedGoblet=0;
+  #include "Player.h"
+  #include <iostream>
+
+  using namespace std; 
+
+  Player :: Player(){
+    string playerName = "";
+    int playerFullness = 50;
+    int playerGold = 100;
+    int playerCeramicPot = 0;
+    int playerFryingPan = 0;
+    int playerCauldron = 0;
+    int playerClub = 0;
+    int playerSpear = 0;
+    int playerRapier = 0;
+    int playerBattleAxe = 0;
+    int playerLongSword = 0;
+    int playerWeapons = 0;
+    int playerTreasures = 0;
+    int playerArmor = 0;
+    int playerIngredients = 0;
+    int keys = 0;
+    int playerSilverRing = 0;
+    int playerRubyNecklace = 0;
+    int playerEmeraldBracelet = 0;
+    int playerDiamondCirclet = 0;
+    int playerGemEncrustedGoblet = 0;
   }
-  void getName(){
+
+  Player :: Player(string playerName_, int playerFullness_, int playerGold_, int playerCeramicPot_, int playerFryingPan_, int playerCauldron_, int playerClub_, int playerSpear_, int playerRapier_, int playerBattleAxe_, int playerLongSword_, int playerWeapons_, int playerTreasures_, int playerArmor_, int playerIngredients_, int keys_, int playerSilverRing_, int playerRubyNecklace_, int playerEmeraldBracelet_, int playerDiamondCirclet_, int playerGemEncrustedGoblet_){
+    playerName = playerName_;
+    playerFullness = playerFullness_;
+    playerGold = playerGold_;
+    playerCeramicPot = playerCeramicPot_;
+    playerFryingPan = playerFryingPan_;
+    playerCauldron = playerCauldron_;
+    playerClub = playerClub_;
+    playerSpear = playerSpear_;
+    playerRapier = playerRapier_;
+    playerBattleAxe = playerBattleAxe_;
+    playerLongSword = playerLongSword_;
+    playerWeapons = playerWeapons_;
+    playerTreasures =  playerTreasures_;
+    playerArmor = playerArmor_;
+    playerIngredients = playerIngredients_;
+    keys = keys_;
+    playerSilverRing = playerSilverRing_;
+    playerRubyNecklace = playerRubyNecklace_;
+    playerEmeraldBracelet = playerEmeraldBracelet_;
+    playerDiamondCirclet = playerDiamondCirclet_;
+    playerGemEncrustedGoblet = playerGemEncrustedGoblet_;
+
+
+
+
+  }
+ 
+  string Player :: getName(){
     return playerName;
   }
-  void getFullness(){
+
+  int  Player :: getFullness(){
     return playerFullness;
   }
-  void getGold(){
+
+  int Player :: getGold(){
     return playerGold;
   }
-  void getCeramicPot(){
+
+  int Player :: getCeramicPot(){
     return playerCeramicPot;
   }
-  void getFryingPan(){
-    return playerFryngPan;
+
+  int Player :: getFryingPan(){
+    return playerFryingPan;
   }
-  void getCauldron(){
+
+  int Player :: getCauldron(){
     return playerCauldron;
   }
-  void getClub(){
+
+  int Player :: getClub(){
     return playerClub;
   }
-  void getSpear(){
+  
+  int Player :: getSpear(){
     return playerSpear;
   }
-  void getRapier(){
+
+  int Player :: getRapier(){
     return playerRapier;
   }
-  void getBattleAxe(){
+
+  int Player :: getBattleAxe(){
     return playerBattleAxe;
   }
-  void getLongSword(){
-    return playerSword;
+
+  int Player :: getLongSword(){
+    return playerLongSword;
   }
-  void getWeapons(){
+
+  int Player :: getWeapons(){
     return playerWeapons;
   }
-  void getTreasures(){
+
+  int Player :: getTreasures(){
     return playerTreasures;
   }
-  void getArmor(){
+
+  int Player :: getArmor(){
     return playerArmor;
   }
-  void getIngredients(){
+
+  int Player :: getIngredients(){
     return playerIngredients;
   }
-  void getKeys(){
-    return playerKeys;
+
+  int Player :: getkeys(){
+    return keys;
   }
-  string getName(){
-    return playerName;
+
+  int Player :: getSilverRing(){
+    return playerSilverRing;
   }
-  int setSilverRing(){
-    return silver_ring;
+
+  int Player :: getRubyNecklace(){
+    return playerRubyNecklace;
   }
-  int setRubyNecklace(){
-    return ruby_necklace;
+
+  int Player :: getEmeraldBracelet(){
+    return playerEmeraldBracelet;
   }
-  int setEmeraldBracelet(){
-    return emerald_bracelet;
+
+  int Player :: getDiamondCirclet(){
+    return playerDiamondCirclet;
   }
-  int setDiamondCirclet(){
-    return diamond_circlet;
-  }
-  int setGemEncrustedGoblet(){
-    return gem_encrusted_gobletin;
+  
+  int Player :: getGemEncrustedGoblet(){
+    return playerGemEncrustedGoblet;
   }
 
 
-  void setName(string namein){
-    playerName=namein;
+
+
+  string Player :: setName(string namein){
+    playerName = namein;
   }
-  void setFullness(int fullin){
-    playerFullness=fullin;
+
+  void Player :: setFullness(int fullin){
+    playerFullness = fullin;
   }
-  void setGold(int goldin){
-    playerGold=goldin;
+
+  void Player :: setGold(int goldin){
+    playerGold = goldin;
   }
-  void setCeramicPot(int potin){
+
+  void Player :: setCeramicPot(int potin){
     playerCeramicPot=potin;
   }
-  void setFryingPan(int panin){
-    playerFryingPan=panin;
-  }
-  void setCauldron(int cauldronin){
-    playerCauldron=cauldronin;
-  }
-  void setClub(int clubin){
-    playerClub=clubin;
-  }
-  void setSpear(int spearin){
-    playerSpear=spearin;
-  }
-  void setRapier(int rapierin){
-    playerRapier=cauldronin;
-  }
-  void setBattleAxe(int axein){
-    playerBattleAxe=axein;
-  }
-  void setLongSword(int swordin){
-    playerLongSword=swordin;
-  }
-  void setArmor(int armorin){
-    playerArmor=armorin;
-  }
-  void setIngredients(int ingredientsin){
-    playerIngredients=ingredientsin;
-  }
-  void setkeys(int keyin){
-    playerkeys=keyin;
-  }
-  void setSilverRing(int silver_ringin){
-    playerSilverRing=silver_ringin;
-  }
-  void setRubyNecklace(int ruby_necklacein){
-    playerRubyNecklace=ruby_necklacein;
-  }
-  void setEmeraldBracelet(int emerald_braceletin){
-    playerEmeraldBracelet=emerald_braceletin;
-  }
-  void setDiamondCirclet(int diamond_circletin){
-    playerDiamondCirclet=diamond_circletin;
-  }
-  void setGemEncrustedGoblet(int gem_encrusted_gobletin){
-    playerGemEncrustedGoblet=gem_encrusted_gobletin;
+
+  void Player :: setFryingPan(int panin){
+    playerFryingPan = panin;
   }
 
+  void Player :: setCauldron(int cauldronin){
+    playerCauldron=cauldronin;
+  }
+
+  void Player :: setClub(int clubin){
+    playerClub = clubin;
+  }
+
+  void Player :: setSpear(int spearin){
+    playerSpear = spearin;
+  }
+
+  void Player :: setRapier(int rapierin){
+    playerRapier = rapierin;
+  }
+
+  void Player :: setBattleAxe(int axein){
+    playerBattleAxe = axein;
+  }
+
+  void Player :: setLongSword(int swordin){
+    playerLongSword = swordin;
+  }
+
+  void Player :: setWeapons(int weapons){
+    playerWeapons = weapons;
+  }
+
+  void Player :: setTreasures(int treasures){
+    playerTreasures = treasures;
+  }
+
+  void Player :: setArmor(int armorin){
+    playerArmor = armorin;
+  }
+
+  void Player :: setIngredients(int ingredientsin){
+    playerIngredients = ingredientsin;
+  }
+
+  void Player :: setkeys(int keyin){
+    keys = keyin;
+  }
+
+  void Player :: setSilverRing(int silver_ringin){
+    playerSilverRing=silver_ringin;
+  }
+
+  void Player :: setRubyNecklace(int ruby_necklacein){
+    playerRubyNecklace=ruby_necklacein;
+  }
+
+  void Player :: setEmeraldBracelet(int emerald_braceletin){
+    playerEmeraldBracelet=emerald_braceletin;
+  }
+
+  void Player :: setDiamondCirclet(int diamond_circletin){
+    playerDiamondCirclet=diamond_circletin;
+  }
+
+  void Player :: setGemEncrustedGoblet(int gem_encrusted_gobletin){
+    playerGemEncrustedGoblet = gem_encrusted_gobletin;
+  }
