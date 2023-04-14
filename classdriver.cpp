@@ -1,5 +1,7 @@
 #include "Merchant.h"
 #include "Party.h"
+#include "Misfortune.h"
+#include "Player.h"
 #include <iostream>
 
 using namespace std;
@@ -144,5 +146,158 @@ int main(){
     //50
     //4
     //3
+
+
+    //Test Misfortune Class 
+    Misfortune misfortune = Misfortune(3, 4);
+    cout << misfortune.getRemainingPlayers() << endl;
+    misfortune.setRemainingPlayers(2);
+    cout << misfortune.getRemainingPlayers() << endl;
+
+    cout << misfortune.getTurn() << endl;
+    misfortune.setTurn(2);
+    cout << misfortune.getTurn() << endl;
+
+    //Expected
+    //3
+    //2
+    //4
+    //2
+
+    //Test Player Class 
+    //test get functions
+    Player player = Player("Bob", 40, 10, 4, 3, 2, 1, 3, 4, 5, 1, 4, 3, 3, 15, 3, 2, 4, 3, 0, 1){
+    cout << player.getName() << endl;
+    cout << player.getFullness() << endl;
+    cout << player.getGold() << endl;
+    cout << player.getCeramicPot() << endl;
+    cout << player.getFryingPan() << endl;
+    cout << player.getCauldron() << endl;
+    cout << player.getClub() << endl;
+    cout << player.getSpear() << endl; 
+    cout << player.getRapier() << endl;
+    cout << player.getBattleAxe() << endl;
+    cout << player.getLongSword() << endl;
+    cout << player.getWeapons() << endl;
+    cout << player.getTreasures() << endl;
+    cout << player.getArmor() << endl;
+    cout << player.getIngredients()  << endl;
+    cout << player.getkeys() << endl;
+    cout << player.getSilverRing() << endl;
+    cout << player.getRubyNecklace() << endl;
+    cout << player.getEmeraldBracelet()  << endl;
+    cout << player.getDiamondCirclet()  << endl;
+    cout << player.getGemEncrustedGoblet()  << endl;
+ 
+
+    //Expected
+    //Bob
+    //40
+    //10
+    //4
+    //3
+    //2
+    //1
+    //3
+    //4
+    //5
+    //1
+    //4
+    //3
+    //3
+    //15
+    //3
+    //2
+    //4
+    //3
+    //0
+    //1
+
+    player.setName("Billy");
+    cout << player.getName() << endl;
+
+    player.setFullness(40);
+    cout << player.getFullness() << endl;
+
+    player.setGold(4);
+    cout << player.getGold() << endl;
+
+    player.setCeramicPot(2);
+    cout << player.getCeramicPot() << endl;
+
+    player.setFryingPan(3);
+    cout << player.getFryingPan() << endl;
+
+    player.setCauldron(6);
+    cout << player.getCauldron() << endl;
+
+    player.setClub(4);
+    cout << player.getClub() << endl;
+
+    player.setSpear(2);
+    cout << player.getSpear() << endl; 
+
+    player.setRapier(3);
+    cout << player.getRapier() << endl;
+
+    player.setBattleAxe(2);
+    cout << player.getBattleAxe() << endl;
+
+    player.setLongSword(4);
+    cout << player.getLongSword() << endl;
+
+    player.setWeapons(7);
+    cout << player.getWeapons() << endl;
+
+    player.setTreasures(10);
+    cout << player.getTreasures() << endl;
+
+    player.setArmor(2);
+    cout << player.getArmor() << endl;
+
+    player.setIngredients(4);
+    cout << player.getIngredients()  << endl;
+
+    player.setkeys(9);
+    cout << player.getkeys() << endl;
+
+    player.setSilverRing(3);
+    cout << player.getSilverRing() << endl;
+
+    player.setRubyNecklace(4);
+    cout << player.getRubyNecklace() << endl;
+
+    player.setEmeraldBracelet(6);
+    cout << player.getEmeraldBracelet()  << endl;
+
+    player.setDiamondCirclet(3);
+    cout << player.getDiamondCirclet()  << endl;
+
+    player.setGemEncrustedGoblet(1);
+    cout << player.getGemEncrustedGoblet()  << endl;
+
+    //Expected
+    //Billy
+    //40
+    //4
+    //2
+    //3
+    //6
+    //4
+    //2
+    //3
+    //2
+    //4
+    //7
+    //10
+    //2
+    //4
+    //9
+    //3
+    //4
+    //6
+    //3
+    //1
+
 
 }
