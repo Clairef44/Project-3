@@ -11,28 +11,28 @@ class Merchant{
 
         // Inventory 
         int gold_; 
-        int ingredients_;
+        int ingredients_= num_rooms_cleared;
 
         //Cookware 
-        int ceramic_pot_;
-        int frying_pan_;
-        int cauldron_;
+        int ceramic_pot_= 5+num_rooms_cleared*.25*5;
+        int frying_pan_= 10+num_rooms_cleared*.25*10;
+        int cauldron_= 20+num_rooms_cleared*.25*20;
 
         //Weapons 
-        int club_;
-        int spear_;
-        int rapier_;
-        int battle_axe_;
-        int longsword_;
+        int club_= 2+num_rooms_cleared*.25*2;
+        int spear_= 2+num_rooms_cleared*.25*2;
+        int rapier_= 5+num_rooms_cleared*.25*5;
+        int battle_axe_= 15+num_rooms_cleared*.25*15;
+        int longsword_= 50+num_rooms_cleared*.25*50;
 
-        int armor_;
+        int armor_= 5+num_rooms_cleared*.25*5;
     
         //Treasures 
-        int silver_ring_;
-        int ruby_necklace_;
-        int emerald_bracelet_;
-        int diamond_circlet_;
-        int gem_encrusted_goblet_;
+        int silver_ring_= 10;
+        int ruby_necklace_= 20;
+        int emerald_bracelet_= 30;
+        int diamond_circlet_= 40;
+        int gem_encrusted_goblet_= 50;
 
 
 
