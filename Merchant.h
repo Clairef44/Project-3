@@ -11,7 +11,7 @@ class Merchant{
 
         // Inventory 
         int gold_; 
-        int ingredients_= num_rooms_cleared;
+        int ingredients_= 1+num_rooms_cleared*.25;
 
         //Cookware 
         int ceramic_pot_= 5+num_rooms_cleared*.25*5;
